@@ -126,7 +126,7 @@ function compute()
     
     document.getElementById("gradPoint").innerHTML = (creditsProd/creditsTot).toPrecision(4) ;
 
-    alert((creditsProd/creditsTot).toPrecision(4) + "\n" + "you have " + countArrear + "arrear(s)." ) ;
+    alert((creditsProd/creditsTot).toPrecision(4) + "\n" + "you have " + countArrear + " arrear(s)." ) ;
 
    
 
