@@ -1,0 +1,164 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <title>GPA - Grade Points Average.</title>
+
+    <script src="script.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <header>
+        <span id="iCon">
+
+        </span>
+        Omega Developrs
+    </header>
+
+    <main id=container>
+
+        <section class="int-user">
+            <h4 class="greetings">
+                Hello, there.
+            </h4>
+            <p class="description">
+                Let's compute 
+                 <span class="colorize">
+                    Grade Points Average.
+                </span>
+            </p>
+        </section>
+
+
+        <div id="usr-input">
+
+            <label for="count">
+                Enter the number of subjects
+            </label>
+            <input type="number" name="count" id="count" min=1 max=15 title="Range(1-15)">
+
+
+            <button type="button" onclick = "append()" title="Create additional fields to fetch your grades.">
+                Create Space
+            </button>
+
+        </div>
+
+       <div id="con-space" >
+        <span id="space">
+            <select id="paper" class="paper" >
+                <option value="4">Mathematics III</option>
+            <option value="3">Manufacturing Tech 1</option>
+            <option value="4">Engineering Thermodynamics</option>
+            <option value="4">FM & Machinery</option>
+            <option value="3">Kinematics of Machines </option>
+            <option value="2">Machine Drawing</option>
+            <option value="1">Manufacturing Tech Lab 1</option>
+            <option value="1">FM Lab</option>
+            <option value="1">KOM Lab</option>
+
+            
+            <option value="4">Numerical Methods</option>
+            <option value="3">Strength Of Materials</option>
+            <option value="3">Manufacturing Tech 2</option>
+            <option value="3">EM & Metallurgy</option>
+            <option value="3">EDC</option>
+            <option value="4">Thermal Engg.</option>
+            <option value="1">Basics Of Engine</option>
+            <option value="1">Thermal Engineering Lab</option>
+            <option value="1">SOM & Metallurgy Lab</option>
+            <option value="1">Manufacturing Tech Lab 2</option>
+
+
+            <option value="3">Gas Dynamics & Jet Propulsion</option>
+            <option value="3">Dynamics Of Machines</option>
+            <option value="3">Design Of Machine Elements</option>
+            <option value="3">Engg. Metrology & measurements</option>
+            <option value="3">CAD & manufacturing</option>
+            <option value="3">Elective - I</option>
+            <option value="1">Dynamics Lab</option>
+            <option value="1">EM & measurements Lab</option>
+            <option value="1">CAD & CAM Lab</option>
+
+
+            <option value="3">Finite Element Analysis</option>
+            <option value="4">Heat & Mass Transfer</option>
+            <option value="3">Design Of Transmission Systems</option>
+            <option value="3">TQM</option>
+            <option value="3">MPMC</option>
+            <option value="3">Elective - II </option>
+            <option value="1">Heat & Mass Transfer Lab</option>
+            <option value="1">Comp. Aided simulation & analysis Lab</option>
+            <option value="2">Design & Fabrication Project</option>
+
+
+            <option value="3">Mechatronics</option>
+            <option value="3">EVS</option>
+            <option value="3">Automobile Engg.</option>
+            <option value="3">Elective- III </option>
+            <option value="3">Elective - IV</option>
+            <option value="3">Open Elective</option>
+            <option value="1">Mechatronics Lab</option>
+
+            <option value="3">Elective - V</option>
+            <option value="3">Elective - VI</option>
+            <option value="3">Open Elective II</option>
+            <option value="10">Project Work</option>
+               
+            </select>
+            <select id="grade" class="grade">
+                <option value="10">O</option>
+                <option value="9">A+</option>
+                <option value="8">A</option>
+                <option value="7">B+</option>
+                <option value="6">B</option>
+                <option value="0">RA</option>
+            </select>
+        </span>
+       </div>
+
+        <div id= "btn-options">
+
+            <button type="submit" onclick= "compute()">
+                Compute GPA
+            </button>
+
+            <button type="reset" onclick= "reset()">
+                Reset                
+            </button>
+
+
+        </div>
+
+
+
+        <div id="result">
+
+            <span class="con-label">
+                Your 
+                <span class="colorize">
+                    Grade Point Average
+                </span>
+                is 
+                <span id="gradPoint">
+                </span>
+            </span>
+            
+
+        </div>
+
+
+
+    </main>
+
+    <footer>
+        <div class="foot" id="foot">
+            Copyrights reserved. (c) 2020 Omega Developrs
+        </div>
+    </footer>
+    
+</body>
+</html>
