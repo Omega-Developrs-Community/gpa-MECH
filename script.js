@@ -37,8 +37,9 @@ function addSpace()
 
 function append()
 { 
-   
- document.getElementById('foot').style.bottom='auto';
+    var doc = document.getElementById('foot');
+   doc.style.position = "absolute";
+    doc.style.bottom='auto';
     if(callCount == 0)
     {
        addSpace() ;
