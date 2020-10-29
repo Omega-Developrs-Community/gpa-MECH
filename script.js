@@ -9,7 +9,15 @@ function addSpace()
     document.getElementById("btn-options").style.display ="block" ;
 
     var count = document.getElementById("count").value ;
-
+    var doc = document.getElementById('foot');
+   
+   
+    if (count > 11){
+        doc.style.bottom='auto';
+    }
+    else{
+        doc.style.bottom='0';
+    }
 
     
     var space = document.getElementById("space") ;
@@ -37,9 +45,7 @@ function addSpace()
 
 function append()
 { 
-    var doc = document.getElementById('foot');
-   doc.style.position = "absolute";
-    doc.style.bottom='auto';
+ 
     if(callCount == 0)
     {
        addSpace() ;
@@ -127,7 +133,7 @@ function compute()
     
     document.getElementById("gradPoint").innerHTML = (creditsProd/creditsTot).toPrecision(4) ;
 
-    alert((creditsProd/creditsTot).toPrecision(4) + "\n" + "you have " + countArrear + " arrear(s)." ) ;
+    alert((creditsProd/creditsTot).toPrecision(4) + "\n" + "you have " + countArrear + "arrear(s)." ) ;
 
    
 
