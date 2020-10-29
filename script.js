@@ -12,7 +12,7 @@ function addSpace()
     var doc = document.getElementById('foot');
    
    
-    if (count > 11){
+    if (count > 8){
         doc.style.bottom='auto';
     }
     else{
